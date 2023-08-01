@@ -24,7 +24,7 @@ async function InsertSignUpUser(token) {
   <h5>Welcome to Runner App</h5>
   <p>Your account has been successfully registered in Runner</p>
   <p>Click below link to login into your account.</p>
-  <a href="http://localhost:3000/login">click here</a>
+  <a href="https://main--dynamic-sundae-733fcb.netlify.app/login">click here</a>
   <p>Regards,</p>
   <p>Runner App</p>
   `;
@@ -42,7 +42,7 @@ async function InsertSignUpUser(token) {
           <h1>Registration Successful</h1>
           <p>Your account has been successfully registered in Runner.</p>
           <p>Click below link to login into your account.</p>
-          <a href="http://localhost:3000/login">Click here</a>
+          <a href="https://main--dynamic-sundae-733fcb.netlify.app/login">Click here</a>
       </html>`;
     }
     return `<html>
@@ -79,7 +79,7 @@ async function InsertVerifyUser(name, email, password) {
       password: hashedPassword,
       token: token,
     });
-    const activationLink = `http://localhost:4000/signin/${token}`;
+    const activationLink = `https://main--dynamic-sundae-733fcb.netlify.app/signin/${token}`;
     const content = `
         <h4>Hi there,</h4>
         <h5>Welcome to Runner App</h5>

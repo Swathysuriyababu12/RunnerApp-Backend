@@ -10,7 +10,7 @@ var signinRouter = require("./routes/signin");
 var forgetpasswordRouter = require("./routes/forgetpassword");
 
 
-
+app.use(cors({ origin: "*" }));
 
 app.use(logger('dev'));
 app.use(express.json());
@@ -21,7 +21,7 @@ app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 
-app.use(cors({ origin: "*" }));
+
 app.use("/login", loginRouter);
 app.use("/signin", signinRouter);
 app.use("/forgetpassword", forgetpasswordRouter);
