@@ -79,7 +79,7 @@ async function InsertVerifyUser(name, email, password) {
       password: hashedPassword,
       token: token,
     });
-    const activationLink = `https://main--dynamic-sundae-733fcb.netlify.app/signin/${token}`;
+    const activationLink = `https://runner-bxqd.onrender.com/signin/${token}`;
     const content = `
         <h4>Hi there,</h4>
         <h5>Welcome to Runner App</h5>
